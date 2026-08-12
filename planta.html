@@ -126,7 +126,7 @@
             <img id="imagen-planta" src="" alt="Planta" class="imagen-nitida">
         </div>
         <div class="container h-100 position-relative">
-            <a href="index.html" class="btn-volver"><i class="fa-solid fa-arrow-left me-2"></i>Volver</a>
+            <a href="javascript:void(0);" onclick="volverAlCatalogo()" class="btn-volver"><i class="fa-solid fa-arrow-left me-2"></i>Volver</a>
         </div>
     </div>
 
@@ -193,6 +193,17 @@
                     <a href="index.html" class="btn btn-success mt-3">Volver al catálogo</a>
                 </div>
             `;
+        }
+
+        function volverAlCatalogo() {
+            // Si el historial de navegación viene del index.html, volvemos hacia atrás
+            // para preservar la posición del scroll
+            if (document.referrer && document.referrer.includes("index.html")) {
+                history.back();
+            } else {
+                // Si abrieron el link directo (ej. escaneando QR), los enviamos al index
+                window.location.href = 'index.html';
+            }
         }
     </script>
 </body>
