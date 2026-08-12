@@ -217,6 +217,27 @@ const baseDeDatosPlantas = [
         botanica: "Es una hierba aromática perenne de la familia de las lamiáceas. Es ampliamente conocida por sus hojas pequeñas ovaladas, tallos cuadrangulares, flores violáceas y su intenso aroma. Se utiliza principalmente en infusiones por sus beneficios digestivos y calmantes.",
         foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2751_rbgs11jan.jpg/960px-Gardenology.org-IMG_2751_rbgs11jan.jpg",
         icono: "fa-seedling",
-        colorIcono: "#ccd5ae"
+    },
+    {
+        id: "mostacilla",
+        nombre: "Mostacilla",
+        cientifico: "Rapistrum rugosum",
+        tipo: "🌱 Herbácea",
+        usos: "Principalmente como forraje para animales, abono verde y alimento humano silvestre.",
+        botanica: "Crece de forma silvestre en ambientes alterados. Puedes encontrarla fácilmente a los costados de los caminos rurales, vías de tren, terrenos baldíos, áreas industriales, cultivos, y también en el departamento Pocho y toda la provincia de Córdoba. Sus frutos son de color verde cuando están inmaduros y se vuelven marrón claro o pajizos al secarse. Los frutos son alargados, cilíndricos y nudosos, miden entre 0.5 y 1.5 cm de largo y tienen la particularidad de tener una sección superior más ensanchada o globosa.",
+        foto: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Bolletjesraket_19-05-2006_12.34.12.JPG",
+        icono: "fa-seedling",
+        colorIcono: "#fefae0"
+    },
+    {
+        id: "espinillo",
+        nombre: "Espinillo",
+        cientifico: "Vachellia caven",
+        tipo: "🌳 Árbol Nativo",
+        usos: "Las hojas y flores se usan en infusiones como digestivo y expectorante. El té de corteza sirve para hacer gárgaras contra la tos o irritación. Externamente, es astringente y cicatrizante para limpiar heridas y quemaduras. Las semillas y chauchas tiernas son comestibles, también usadas como suplemento energético para el ganado caprino y ovino. Su madera es muy dura y densa ideal para fabricar postes de alambrado y carbón.",
+        botanica: "Se encuentra en las sierras de Córdoba, incluido en el departamento Pocho. Es un clásico del monte espinal y lo reconocerás fácilmente por sus flores amarillas en forma de pompones perfumados que brotan al inicio de la primavera. También conocido como aromito, es un árbol o arbusto pequeño muy típico de Argentina y otras regiones de Sudamérica. Es de un porte vago y achatado, alcanza entre 3 y 5 de altura y se caracteriza por su gran rusticidad, sus espinas rectas y su potente fragancia. Posee una copa rala y ramas tortuosas (en zigzag). Su corteza es rugosa y oscura.",
+        foto: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Vachellia_caven_kz02.jpg",
+        icono: "fa-tree",
+        colorIcono: "#d4a373"
     }
 ];
