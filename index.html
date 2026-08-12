@@ -103,6 +103,27 @@
             border-top-right-radius: 20px;
             z-index: 1000;
         }
+        
+        #btn-volver-arriba {
+            display: none;
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            z-index: 99;
+            font-size: 1.2rem;
+            border: none;
+            outline: none;
+            background-color: var(--tierra-claro);
+            color: white;
+            cursor: pointer;
+            padding: 12px 17px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        #btn-volver-arriba:active {
+            transform: scale(0.9);
+        }
     </style>
 </head>
 <body>
@@ -128,6 +149,11 @@
     <div class="footer-fijo">
         Herbario Digital 3.0 • Villa de Pocho
     </div>
+
+    <!-- Botón Volver Arriba -->
+    <button id="btn-volver-arriba" title="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
@@ -166,6 +192,24 @@
                 planta.cientifico.toLowerCase().includes(termino)
             );
             renderizarPlantas(plantasFiltradas);
+        });
+
+        // Funcionalidad Volver Arriba
+        const btnArriba = document.getElementById("btn-volver-arriba");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnArriba.style.display = "block";
+            } else {
+                btnArriba.style.display = "none";
+            }
+        };
+
+        btnArriba.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
     </script>
 </body>
