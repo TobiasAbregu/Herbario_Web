@@ -113,6 +113,27 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             z-index: 1000;
+            padding-bottom: calc(10px + env(safe-area-inset-bottom));
+        }
+
+        /* --- Optimizaciones Móviles --- */
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 100px; 
+            }
+            .btn-volver {
+                top: max(20px, env(safe-area-inset-top));
+                margin-top: 10px;
+            }
+            #titulo-planta {
+                font-size: 2rem !important;
+            }
+            .foto-hero {
+                height: 35vh; 
+            }
+            .info-card {
+                padding: 15px;
+            }
         }
     </style>
 </head>

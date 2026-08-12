@@ -181,6 +181,33 @@
                 font-weight: bold;
             }
         }
+
+        /* --- Optimizaciones Móviles Pantalla --- */
+        @media screen and (max-width: 768px) {
+            .header-catalogo {
+                padding: 25px 15px;
+            }
+            .header-catalogo h1 {
+                font-size: 1.5rem;
+            }
+            .btn-volver {
+                top: max(15px, env(safe-area-inset-top));
+                margin-top: 5px;
+            }
+            .qr-card {
+                padding: 10px;
+            }
+            .qr-card h3 {
+                font-size: 0.9rem;
+            }
+            .modal-content {
+                margin: 10px;
+            }
+            #btn-download, #btn-print {
+                padding: 12px;
+                font-size: 1.1rem;
+            }
+        }
     </style>
 </head>
 <body>

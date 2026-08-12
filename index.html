@@ -124,6 +124,35 @@
         #btn-volver-arriba:active {
             transform: scale(0.9);
         }
+
+        /* --- Optimizaciones Móviles --- */
+        @media (max-width: 768px) {
+            .header-catalogo {
+                padding: 25px 15px;
+            }
+            .header-catalogo h1 {
+                font-size: 1.5rem;
+            }
+            .item-planta {
+                padding: 10px;
+            }
+            .mini-foto {
+                width: 65px;
+                height: 65px;
+                font-size: 1.2rem;
+            }
+            .item-planta h2 {
+                font-size: 1.1rem !important;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 170px;
+            }
+            #btn-volver-arriba {
+                bottom: 80px; 
+                padding: 10px 15px;
+            }
+        }
     </style>
 </head>
 <body>
